@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <button onclick="getArray()"> click 1
+    </button>
+</head>
+
+<body>
+
+    <script>
+        function getArray() {
+            let text=" ";
+            fruits = ['Orange', 'Mango', 'Banana', 'Apple'];
+            fruits.forEach(processArray);
+           function processArray(value){
+            text= text+ ' ' +value;
+
+            }
+            console.log(text)
+        }
+    </script>
+</body>
+
+</html>

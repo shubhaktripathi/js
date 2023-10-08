@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <button onclick="getObject()"> click 1
+    </button>
+</head>
+
+<body>
+
+    <script>
+        function getObject() {
+            const person = {fname: "John", 
+                            lname: "Doe", 
+                            age: 25 };
+                for(let key in person){
+                    console.log(key);
+                    console.log(person[key]);
+                }
+              
+        }
+
+    </script>
+</body>
+
+</html>

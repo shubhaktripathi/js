@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    .green {
+        width: 300px;
+        border: 15px solid green;
+    }
+
+    .red {
+        width: 500px;
+        border: 30px solid red;
+    }
+</style>
+
+<head>
+    <title>bubbling example</title>
+
+    <div id="parent" class="red">
+       <p> parent</p> 
+        <button id="child" class="green">
+            <p>Child</p>
+        </button>
+    </div>
+
+</head>
+
+<body>
+    <script>
+        //addEventListener(type, listener, useCapture=true: capturing false:bubbling)
+
+        document.getElementById("child").addEventListener("click", function () {
+                alert("You clicked the Child element!");
+            },false);
+        document.getElementById("parent").addEventListener("click", function () {
+                alert("You clicked the parent element!");
+            },false);
+
+    </script>
+
+
+</body>
+
+</html>

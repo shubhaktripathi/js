@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>this Exmaple</title>
+
+<body>
+    <div>
+        <button onclick="handleClick()">click</button>
+        <p id="demo"></p>
+    </div>
+</body>
+<script>
+    var myName='shubham'
+    var nam='Sanjay'
+    car = {
+        nam:'ertiga',
+        model: "Dzire",
+        type: "4 wheeler",
+        color: "gray",
+        d: function drive() {
+            console.log(nam)
+            console.log(this.nam)
+            console.log(car.model);
+            // console.log(model);
+            window.console.log(this.model);
+            console.log(window.myName);
+
+        }
+    }
+    function handleClick() {
+       // nam='Adesh';
+       // console.log(nam);
+       // console.log(this.nam)
+        car.d();
+        //console.log(model);
+       // console.log(car.model);
+       // console.log(this.car.model); 
+    }
+   
+    document.getElementById("demo").innerHTML = this;
+
+
+</script>
+<!-- /*
+In an object method, this refers to the object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.*/ -->
+
+</html>

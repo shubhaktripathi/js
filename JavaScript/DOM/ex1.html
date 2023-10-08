@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>My First Page</h2>
+    <p id="demo"> </p>
+    <p id="demo1">ok trgtr</p>
+    <p id="demo2"></p>
+    <p class="class1"> NEW </p>
+    <p class="class1"> ABC</p>
+
+
+
+    <script>
+        document.getElementsByTagName("h2")[0].innerHTML = "Hello mote!";
+        document.getElementById("demo1").innerHTML = "Hello mote!";
+        document.getElementById("demo1").style.color = "Red";
+        document.getElementById("demo1").style.color = "Red";
+        document.getElementsByClassName("class1")[1].innerHTML="This is my class"
+        const a = document.querySelectorAll("p");
+        console.log(a)
+        const x = document.querySelectorAll("p#demo");
+        console.log(x)
+        document.querySelectorAll("p.class1").innerHTML='this  is from qs';
+        //console.log(y)
+
+
+
+    </script>
+
+</body>
+
+</html>

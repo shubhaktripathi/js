@@ -1,0 +1,44 @@
+
+  <!DOCTYPE html>
+  <html>
+  <title>this Exmaple</title>
+  
+  <body>
+      <div>
+          <button onclick="handleClick()">click</button>
+          <p id="demo"></p>
+      </div>
+  </body>
+ 
+  <script>
+    var obj = {
+        id: 42,
+        counter: function counter() {
+
+          setTimeout(function() {
+            console.log(this.id);
+          }, 3000);
+        }
+    }
+
+    var obj1 = {
+        id: 42,
+        counter: function counter() {
+            
+          setTimeout(()=> {
+            console.log(this.id);
+          }, 3000);
+        }
+    }
+  function  handleClick(){
+        setTimeout( function(){
+            console.log('Hey Adesh'); 
+        },3000);
+
+        obj.counter();
+        obj1.counter();
+
+    }
+
+  </script>
+  </html>
